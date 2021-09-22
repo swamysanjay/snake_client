@@ -11,6 +11,9 @@ const connect = function () {
   conn.on('connect', () => {
     console.log("Connected to the SERVER!");
     conn.write("Name: SAN");
+    /*setInterval( func = () => {
+      conn.write("Move: up");
+    }, 500); */
   });
 
   return conn;
