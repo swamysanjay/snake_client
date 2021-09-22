@@ -1,4 +1,4 @@
-const connect = require('../snake_client/client');
+const { connect } = require('./client');
 
 console.log("Connecting ...");
 connect();

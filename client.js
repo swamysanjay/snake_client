@@ -8,6 +8,11 @@ const connect = function () {
 
   conn.setEncoding('utf8');
 
+  conn.on('connect', () => {
+    console.log("Connected to the SERVER!");
+    conn.write("Name: SAN");
+  });
+
   return conn;
 };
 
